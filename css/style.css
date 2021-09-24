@@ -418,7 +418,7 @@ margin: 15px;
     
     .profile-box .bntContainer a{
         text-decoration: none;
-        color: wheat;
+        color: #741e64;
         font-size: 15px;
     }
     
@@ -434,6 +434,7 @@ margin: 15px;
         margin-top: 20px;
         display: flex;
         justify-content: space-evenly;
+        
     }
 
     .carrossel{
@@ -449,7 +450,7 @@ margin: 15px;
 
 
     .slider{
-        width: 960px;
+        width: 100%;
         height: 100px;
         overflow: hidden;
         position: relative;
@@ -563,6 +564,7 @@ margin: 15px;
 
 }
 
+
 .content h2{
     color: #ffffff;
     font-size: 2.5em;
@@ -612,6 +614,7 @@ margin: 15px;
     letter-spacing: 2px;
     cursor: pointer;
     font-weight: 500;
+    border-radius: 2px;
 }
 
 .content a{
@@ -642,8 +645,63 @@ margin: 15px;
     text-decoration: none;
     color: white;
 }
+.content form input:focus{
+    border-bottom: 2px solid #fff;
+}
+.content form textarea:focus{
+    border-bottom: 2px solid #fff;
+}
+
+
 
 
 
   /*Responsividade*/
+  @media (max-width: 1022px) {
+    
+    .banner video{
+       
+    }
+    .time{
+        flex-direction: column;
+        align-items: center;
+    }
+    .primeiro{
+        display: none;
+    }
+    .cardRaras{
+        text-align: center;
+    }
+    .doencasRaras .primeiraParte .cardRaras{
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .doencasRaras .primeiraParte .cardRaras img{
+        width:50%;
+    }
+    .doencasRaras .segundaParte .cardRaras{
+
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .doencasRaras .segundaParte .cardRaras img {
+        width:50%;
+    }
+    .doencasRaras .terceiraParte .cardRaras img {
+        display: none;
+    }
+    .team-row{
+        flex-direction: column;
+    align-items: center;
+    }
+    .content{
+        
+    text-align: center;
+    }
+    .content form{
+        padding: 5%;
+    }
+    
+}
 
