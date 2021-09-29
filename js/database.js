@@ -10,14 +10,16 @@ class Aux{
        let acdg = {
             titulo:'ACDG',
             nome:'ACDG',
-            tel:'3226.4562',
+            tel:'(85) 3226.4562',
             insta:'https://www.instagram.com/acdgbrasil/?hl=pt-br',
             face:'https://www.facebook.com/ACDGBRASIL/',
             site:'http://acdgbrasil.com/',
             coordenadas:{ lat:-3.804844796524208, lng:-38.53404600286238, }
         }
 
-        
+        /*
+
+      
 
         let exemplo = {
             titulo:'Exemplo',
@@ -29,9 +31,34 @@ class Aux{
             coordenadas:{ lat:-3.7691783232126874, lng: -38.48011135569974, }
         }
 
+        */
+
+        let AMAGER = {
+            titulo:'AMAGER',
+            nome:'Associação Maranhense de doenças genéticas e Rara',
+            tel:'(98) 98478-5681',
+            insta:'Pagina indisponivel no momento',
+            face:'https://www.facebook.com/RaraGenteMaranhense/',
+            site:"Não contem Site",
+            coordenadas:{ lat:-2.536683856275456, lng:-44.27117621438177, }
+        }
+
+        let AMPS = {
+            titulo:'AMAGER',
+            nome:'Associação de Mucopolissacaridoses e Doenças Raras do Rio Grande do Norte',
+            tel:'(84) 3082 5979',
+            insta:'https://www.instagram.com/ampsrn/',
+            face:'https://www.facebook.com/ampsrn.mucopolissacaridoses',
+            site:"https://www.ampsrn.com.br/",
+            coordenadas:{ lat:-5.814517092314022, lng:-35.203606260730155, }
+        }
+
+
+
 
         vetorObj.push(acdg)
-        vetorObj.push(exemplo)
+        vetorObj.push(AMAGER)
+        vetorObj.push(AMPS)
 
         return vetorObj
 
@@ -45,7 +72,7 @@ class Aux{
         <h1 id="firstHeading" class="firstHeading">${titulo}</h1>
         <div id="bodyContent">
         <p><b>Nome:</b>${nome}<br>
-        <p><b>Telefone:</b>, (85) ${tel} <br>
+        <p><b>Telefone:</b>, ${tel} <br>
         <p><b>Instagram:</b>, ${insta} <br>
         <p><b>Facebook:</b>, ${face} <br>
         </p>
