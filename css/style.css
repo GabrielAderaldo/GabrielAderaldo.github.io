@@ -40,6 +40,16 @@ header .logo{
     letter-spacing: 2px;
     transition: 0.6s;
 }
+header .logoNonHamburger{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
 
 header.sticky{
     padding: 5px 100px;
@@ -147,7 +157,6 @@ video{
 .sec .content{
     position: relative;
     text-align: center;
-    width: 100%;
 }
 
 .mxw800p{
@@ -474,9 +483,7 @@ margin: 15px;
     }
   
 
-    .slider::before{
-        transform: rotateZ(180deg);
-    }
+    
 
     .slider .slider-track{
         margin-left: 66%;
@@ -659,6 +666,45 @@ margin: 15px;
 }
 
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    display: none;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    color: white;
+  }
+
+
 
 
 
@@ -726,6 +772,34 @@ margin: 15px;
      }
 }
 @media (max-width: 900px) {
+    .carrossel h1{
+        text-align: center;
+    }
+    .topnav a{
+        display: block;
+    }
+    .topnav{
+        opacity: 0.97;
+    }
+    header{
+        display: block;
+        padding: 0 0;
+    }
+    
+    header .logoNonHamburger{
+        display: none;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header.sticky{
+        padding: 0px 0px;
+        opacity: 0.99;
+        background: none;
+    }
+    header.sticky .logo, header.sticky ul li a {
+        color: white;
+    }
     .banner .cardVideo{ 
         top: 41vh;
      }
@@ -746,6 +820,9 @@ margin: 15px;
    }
    .bntContainer .instagram{
        font-size: calc(1em*0.7);
+   }
+   .nonHamburger{
+        display: none;
    }
 }
 @media (max-width: 800px) {
