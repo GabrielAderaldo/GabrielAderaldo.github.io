@@ -90,4 +90,62 @@ class Aux{
 
 
 
+    databaseParceiros(){
+
+        let parceiros = []
+
+        let causasDoBem = {
+            "nome":"causaDoBem",
+            "url":"https://causasdobem.com/"
+        }
+        
+        let ufc = {
+            "nome":"UFC",
+            "url":"https://www.ufc.br/"
+        }
+
+        let unifor = {
+            "nome":"Unifor",
+            "url":"https://www.unifor.br/"
+        }
+
+        let unifanor = {
+            "nome":"Unifanor",
+            "url":"https://www.unifanor.edu.br/unifanor"
+        }
+
+        let unicristus = {
+            "nome":"Unichristus",
+            "url":"https://unichristus.edu.br/"
+        }
+
+        let takeda = {
+            "nome":"takeda",
+            "url":"https://www.takeda.com/pt-br/"
+        }
+
+        let bioMarin = {
+            "nome":"biomarin",
+            "url":"https://www.biomarin.com/"
+        }
+
+
+        let ptc ={
+            "nome":"ptc",
+            "":"https://www.ptcbio.com/"
+        }
+
+        parceiros.push(causasDoBem)
+        parceiros.push(ufc)
+        parceiros.push(ptc)
+        parceiros.push(bioMarin)
+        parceiros.push(takeda)
+        parceiros.push(unicristus)
+        parceiros.push(unifanor)
+        parceiros.push(unifor)
+    
+        return parceiros
+    }
+
+
 }
