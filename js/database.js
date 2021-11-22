@@ -44,7 +44,7 @@ class Aux{
         }
 
         let AMPS = {
-            titulo:'AMAGER',
+            titulo:'Amaps',
             nome:'Associação de Mucopolissacaridoses e Doenças Raras do Rio Grande do Norte',
             tel:'(84) 3082 5979',
             insta:'https://www.instagram.com/ampsrn/',
