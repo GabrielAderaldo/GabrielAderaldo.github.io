@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fedran</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/doacoes.css">
+    <link rel="stylesheet" href="./css/infinityCarrossel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script>
 
     <script src="js/database.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/carrossel.js"></script>
-    <script src="components/cards.js"></script>
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-a11y="true"
@@ -138,7 +138,7 @@
                     
                     <div class="valoreContainer">
                         <h2>Valores:</h2>
-                        <!--TODO: Ajeitar as imagens que estão tortas...-->
+
                         <div class="containerCards">
                             <div class="cards cards1">
                                <img src="image/eticaSVG.svg">
@@ -303,9 +303,7 @@
 
         <h1>Conheça os nossos parceiros</h1>
 
-        <div class="slider">
-            
-        </div>
+        <div class="slider"></div>
     </section>
     
     <section id="time" class="time">
@@ -689,6 +687,11 @@
 
     </section>
 
+   <div class="fab-absolute">
+        <a href="paginas/doacoes.html">
+            <i class="fas fa-hand-holding-usd"></i>
+        </a>
+   </div>
     
 
     <section class="contato" id="contato">
@@ -787,9 +790,8 @@
 
     <!--Scroll-->
     <script>
-
-        //TODO: Indentar isso antes que eu perca a cebeça....
-                window.addEventListener('scroll', src=>{
+        
+            window.addEventListener('scroll', src=>{
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
@@ -839,23 +841,29 @@
 
 
         /*Carrossel*/
+        let parceirosDuplicado = [...parceiros,...parceiros]
         let slider = document.getElementsByClassName('slider')[0]
         let divSliderTrack = document.createElement('div')
         divSliderTrack.setAttribute('class',"slider-track")
         slider.appendChild(divSliderTrack)
-        parceiros.forEach(element => {
+        
+        parceirosDuplicado.forEach(element => {
+            
             let slide = document.createElement('div')
             slide.setAttribute('class','slide')
             divSliderTrack.appendChild(slide)
 
-            let a = document.createElement('a')
-            a.setAttribute('href',element.url)
-            a.innerText = element.nome
-            slide.appendChild(a)
-
-            
-
+            let img = document.createElement('img')
+            img.setAttribute('src',element.url)
+            img.setAttribute('alt',element.nome)
+            slide.appendChild(img)
         });
+
+
+
+        /*Componentizando card quem somos*/
+        //TODO: Criar um component para quem somos... esse vai ser dificil
+        function quemSomos(){}
         
        
         

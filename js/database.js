@@ -96,43 +96,41 @@ class Aux{
 
         let causasDoBem = {
             "nome":"causaDoBem",
-            "url":"https://causasdobem.com/"
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912233727088787456/causasDoBem.png"
         }
         
         let ufc = {
-            "nome":"UFC",
-            "url":"https://www.ufc.br/"
+            "nome":"Ebrarara",
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912235174551494676/febrararas.jpg"
         }
 
         let unifor = {
-            "nome":"Unifor",
-            "url":"https://www.unifor.br/"
+            "nome":"Breno Bloise",
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912235617751031818/bbl.jpg"
         }
 
         let unifanor = {
-            "nome":"Unifanor",
-            "url":"https://www.unifanor.edu.br/unifanor"
+            "nome":"Pint Pharma",
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912235937218592779/pf.png"
         }
 
         let unicristus = {
             "nome":"Unichristus",
-            "url":"https://unichristus.edu.br/"
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912236166613463071/donem.jpg"
         }
 
         let takeda = {
             "nome":"takeda",
-            "url":"https://www.takeda.com/pt-br/"
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912236406112403476/multicare-consulta-remdios.jpg"
         }
 
         let bioMarin = {
             "nome":"biomarin",
-            "url":"https://www.biomarin.com/"
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912236741308592128/ugx.png"
         }
-
-
         let ptc ={
             "nome":"ptc",
-            "":"https://www.ptcbio.com/"
+            "url":"https://cdn.discordapp.com/attachments/912232768656793643/912236958481268746/giogen.png"
         }
 
         parceiros.push(causasDoBem)
