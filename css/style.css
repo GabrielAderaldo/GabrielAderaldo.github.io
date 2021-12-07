@@ -393,6 +393,15 @@ margin: 15px;
         margin: 100px auto 50px;
     }
 
+    .cardsJS{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+
     .profile-box{
         margin-left: 20px;
         width: 300px;
