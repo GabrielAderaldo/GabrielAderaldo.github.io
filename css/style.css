@@ -317,6 +317,18 @@ margin: 15px;
         font-size:15px;
       }
 
+      .tabs .active .fotos{
+          max-height: 200px;
+          overflow-y:scroll;
+      }
+
+      .tabs .active .fotos img{
+        width: 250px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
       .bntChamadaPodcast {
           background: #eee;
         margin-top: 5vh;
@@ -325,6 +337,8 @@ margin: 15px;
         text-decoration:none;
        
     }
+
+   
     .bntChamadaPodcast:hover {
         background-color:#aaa;
         transition: 0.6s;
