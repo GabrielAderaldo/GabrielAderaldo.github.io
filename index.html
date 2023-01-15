@@ -16,7 +16,7 @@
         let root = document.getElementById('root')
         let root2 = document.getElementById('root2')
         const label = document.createElement('h1')
-        label.textContent = "TEMPO QUE FALTA PARA O LINK SER LANÇADO"
+        label.textContent = "TEMPO DE ATRASO PARA O LINK SER LANÇADO"
         
         root.appendChild(label)
         
@@ -28,9 +28,9 @@
             let hours = Math.floor((timer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((timer % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((timer % (1000 * 60)) / 1000);
-            let timeRoot = `Horas: ${hours}| Minutos: ${minutes}| Segundos: ${seconds}`
+            let timeRoot = `Horas: ${(hours*-1)-1}| Minutos: ${minutes*-1}| Segundos: ${seconds*-1}`
             root2.innerHTML = timeRoot
-
+           
 
         },1000)
     </script>
